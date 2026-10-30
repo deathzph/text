@@ -1,0 +1,37 @@
+import cv2
+import numpy as np
+
+img = cv2.imread('test.jpg')
+if img is None:
+    print("ERROR")
+    exit()
+
+hsv = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
+h,s,v = cv2.split(hsv)
+cv2.namedWindow('Original BGR', cv2.WINDOW_NORMAL)
+cv2 .namedWindow('H channel',cv2.WINDOW_NORMAL)
+cv2.namedWindow('S channel',cv2.WINDOW_NORMAL)
+cv2.namedWindow('V channel',cv2.WINDOW_NORMAL)
+cv2.imshow('Original BGR',img)
+cv2.imshow('H channel',h)
+cv2.imshow('S channel',s)
+cv2.imshow('V channel',v)
+h_norm =cv2.normalize(h,None,0,255,cv2.NORM_MINMAX)
+h_vis = cv2.applyColorMap(h_norm, cv2.COLORMAP_HSV)
+cv2.namedWindow('H pseudo color',cv2.WINDOW_NORMAL)
+cv2.imshow('H pseudo color',h_vis)
+lower_blue=np.array([100,80,80])
+upper_blue=np.array([130,255,255])
+mask_blue = cv2.inRange(hsv,lower_blue,upper_blue)
+blue_result = cv2.bitwise_and(img,img,mask=mask_blue)
+cv2.imshow('Blue mask',mask_blue)
+cv2.imshow('Blue result',blue_result)
+cv2.imwrite('blue_mask.jpg',mask_blue)
+cv2.imwrite('blue_result.jpg',blue_result)
+def gray_to_bgr(g):
+    return cv2.cvtColor(g,cv2.COLOR_GRAY2BGR)
+top = np.hstack([img,h_vis])
+bottom = np.hstack([gray_to_bgr(h),gray_to_bgr(s),gray_to_bgr(v)])
+cv2.imwrite('HSV_split_result.jpg',bottom)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
