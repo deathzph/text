@@ -1,0 +1,14 @@
+[
+{
+  "directory": "/home/miku/opencv/code/src/beforein/second/hard/auto_aim_ws/build",
+  "command": "/usr/bin/g++ -I/home/miku/opencv/code/src/beforein/second/hard/auto_aim_ws/include -isystem /usr/local/include/opencv5 -g -std=gnu++17 -o CMakeFiles/auto_aim_minimal.dir/src/main.cpp.o -c /home/miku/opencv/code/src/beforein/second/hard/auto_aim_ws/src/main.cpp",
+  "file": "/home/miku/opencv/code/src/beforein/second/hard/auto_aim_ws/src/main.cpp",
+  "output": "/home/miku/opencv/code/src/beforein/second/hard/auto_aim_ws/build/CMakeFiles/auto_aim_minimal.dir/src/main.cpp.o"
+},
+{
+  "directory": "/home/miku/opencv/code/src/beforein/second/hard/auto_aim_ws/build",
+  "command": "/usr/bin/g++ -I/home/miku/opencv/code/src/beforein/second/hard/auto_aim_ws/include -isystem /usr/local/include/opencv5 -g -std=gnu++17 -o CMakeFiles/auto_aim_minimal.dir/src/auto_aim/light_bar_detector.cpp.o -c /home/miku/opencv/code/src/beforein/second/hard/auto_aim_ws/src/auto_aim/light_bar_detector.cpp",
+  "file": "/home/miku/opencv/code/src/beforein/second/hard/auto_aim_ws/src/auto_aim/light_bar_detector.cpp",
+  "output": "/home/miku/opencv/code/src/beforein/second/hard/auto_aim_ws/build/CMakeFiles/auto_aim_minimal.dir/src/auto_aim/light_bar_detector.cpp.o"
+}
+]

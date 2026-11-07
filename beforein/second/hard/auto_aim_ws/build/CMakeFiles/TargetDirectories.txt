@@ -1,0 +1,3 @@
+/home/miku/opencv/code/src/beforein/second/hard/auto_aim_ws/build/CMakeFiles/auto_aim_minimal.dir
+/home/miku/opencv/code/src/beforein/second/hard/auto_aim_ws/build/CMakeFiles/edit_cache.dir
+/home/miku/opencv/code/src/beforein/second/hard/auto_aim_ws/build/CMakeFiles/rebuild_cache.dir

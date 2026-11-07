@@ -1,0 +1,4 @@
+# ninja log v7
+10	8865	1793975940540643124	CMakeFiles/auto_aim_minimal.dir/src/main.cpp.o	ea4677b9ba8cc28f
+14	9199	1793975940544643583	CMakeFiles/auto_aim_minimal.dir/src/auto_aim/light_bar_detector.cpp.o	5fd75b23a03d8c22
+9199	9951	1793975949729698618	auto_aim_minimal	3ca66f4a0bb104b7

@@ -1,0 +1,28 @@
+{
+  "version": "7.9.1",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "杯子",
+      "points": [
+        [
+          1056.459294280443,
+          1064.5324031365312
+        ],
+        [
+          2742.7485009225093,
+          2282.2301660516605
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
+    }
+  ],
+  "imagePath": "test.jpg",
+  "imageData": null,
+  "imageHeight": 2860,
+  "imageWidth": 3840
+}
