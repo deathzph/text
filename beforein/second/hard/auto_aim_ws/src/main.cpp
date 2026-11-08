@@ -14,10 +14,18 @@ int main(int argc, char** argv) {
         return -1;
     }
 
+    int max_width = 1280;
+    if(img.cols > max_width){
+        double scale = static_cast<double>(max_width) / img.cols;
+        int new_height = static_cast<int>(img.rows * scale);
+        cv::resize(img, img, cv::Size(max_width, new_height));
+    }
+
     DetectorConfig cfg;
-    cfg.enemy_color = "blue"; 
+    cfg.enemy_color = "red"; 
     
     LightBarDetector detector(cfg);
+    cv::imwrite("debug_mask.jpg", detector.buildColorMask(img));
     cv::Mat result = detector.detectAndDraw(img);
 
     cv::imshow("original", img);
